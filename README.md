@@ -53,13 +53,13 @@ await sock.sendMessage(jid, {
     eventMessage: { 
         isCanceled: false, 
         name: "Hello World", 
-        description: "stvnnvs", 
+        description: "yume native", 
         location: { 
             degreesLatitude: 0, 
             degreesLongitude: 0, 
             name: "rowrrrr" 
         }, 
-        joinLink: "https://call.whatsapp.com/video/stvnnvs", 
+        joinLink: "https://call.whatsapp.com/video/yumevtc", 
         startTime: "1763019000", 
         endTime: "1763026200", 
         extraGuestsAllowed: false 
@@ -95,7 +95,7 @@ Send basic interactive messages with copy button functionality:
 await sock.sendMessage(jid, {
     interactiveMessage: {
         title: "Hello World",
-        footer: "telegram: @stvnnvs ",
+        footer: "telegram: @yumevtc ",
         buttons: [
             {
                 name: "cta_copy",
@@ -117,26 +117,26 @@ Send interactive messages with buttons, copy actions, and native flow features:
 await sock.sendMessage(jid, {    
     interactiveMessage: {      
         title: "Hello World",      
-        footer: "telegram: @stvnnvs",      
+        footer: "telegram: @yumevtc",      
         image: { url: "https://example.com/image.jpg" },      
         nativeFlowMessage: {        
             messageParamsJson: JSON.stringify({          
                 limited_time_offer: {            
                     text: "idk hummmm?",            
-                    url: "t.me/stvnnvs",            
-                    copy_code: "stvnnvs 1437",            
+                    url: "https://t.me/yumevtc",            
+                    copy_code: "yume",            
                     expiration_time: Date.now() * 999          
                 },          
                 bottom_sheet: {            
                     in_thread_buttons_limit: 2,            
                     divider_indices: [1, 2, 3, 4, 5, 999],            
-                    list_title: "stvnnvs",            
-                    button_title: "stvnnvs"          
+                    list_title: "yume native",            
+                    button_title: "yume native"          
                 },          
                 tap_target_configuration: {            
                     title: " X ",            
                     description: "bomboclard",            
-                    canonical_url: "https://t.me/stvnnvs",            
+                    canonical_url: "https://t.me/yumevtc",            
                     domain: "shop.example.com",            
                     button_index: 0          
                 }        
@@ -164,7 +164,7 @@ await sock.sendMessage(jid, {
                                 highlight_label: "label",                  
                                 rows: [                    
                                     {                      
-                                        title: "@stvnnvs",                      
+                                        title: "@yumevtc",                      
                                         description: "love you",                      
                                         id: "row_2"                    
                                     }                  
@@ -195,7 +195,7 @@ Send interactive messages with thumbnail image and copy button:
 await sock.sendMessage(jid, {
     interactiveMessage: {
         title: "Hello World",
-        footer: "telegram: @stvnnvs",
+        footer: "telegram: @yumevtc",
         image: { url: "https://example.com/image.jpg" },
         buttons: [
             {
@@ -247,10 +247,10 @@ Send interactive messages with document from buffer (file system) - **Note: Docu
 await sock.sendMessage(jid, {
     interactiveMessage: {
         title: "Hello World",
-        footer: "telegram: @stvnnvs",
+        footer: "telegram: @yumevtc",
         document: fs.readFileSync("./package.json"),
         mimetype: "application/pdf",
-        fileName: "stvnnvs.pdf",
+        fileName: "yumevtc.pdf",
         jpegThumbnail: fs.readFileSync("./document.jpeg"),
         contextInfo: {
             mentionedJid: [jid],
@@ -263,7 +263,7 @@ await sock.sendMessage(jid, {
             mediaType: 3,
             thumbnailUrl: "https://example.com/image.jpg",
             mediaUrl: " X ",
-            sourceUrl: "https://t.me/stvnnvs",
+            sourceUrl: "https://t.me/yumevtc",
             showAdAttribution: true,
             renderLargerThumbnail: false         
         },
@@ -272,8 +272,8 @@ await sock.sendMessage(jid, {
                 name: "cta_url",
                 buttonParamsJson: JSON.stringify({
                     display_text: "Telegram",
-                    url: "https://t.me/stvnnvs",
-                    merchant_url: "https://t.me/stvnnvs"
+                    url: "https://t.me/yumevtc",
+                    merchant_url: "https://t.me/yumevtc"
                 })
             }
         ]
@@ -288,18 +288,18 @@ Send interactive messages with document from buffer (file system) without contex
 await sock.sendMessage(jid, {
     interactiveMessage: {
         title: "Hello World",
-        footer: "telegram: @stvnnvs",
+        footer: "telegram: @yumevtc",
         document: fs.readFileSync("./package.json"),
         mimetype: "application/pdf",
-        fileName: "stvnnvs.pdf",
+        fileName: "yumevtc.pdf",
         jpegThumbnail: fs.readFileSync("./document.jpeg"),
         buttons: [
             {
                 name: "cta_url",
                 buttonParamsJson: JSON.stringify({
                     display_text: "Telegram",
-                    url: "https://t.me/stvnnvs",
-                    merchant_url: "https://t.me/stvnnvs"
+                    url: "https://t.me/yumevtc",
+                    merchant_url: "https://t.me/yumevtc"
                 })
             }
         ]
