@@ -54,6 +54,7 @@
         "libsignal": "npm:@shennmine/libsignal-node",
         "music-metadata": "^7.12.3",
         "node-cache": "^5.1.2",
+        "node-fetch": "^2.6.1",
         "pino": "^7.0.0",
         "protobufjs": "^7.2.4",
         "uuid": "^9.0.0",
