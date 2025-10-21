@@ -94,6 +94,7 @@ Send basic interactive messages with copy button functionality:
 ```javascript
 await sock.sendMessage(jid, {
     interactiveMessage: {
+        header: "Hello World",
         title: "Hello World",
         footer: "telegram: @yumevtc ",
         buttons: [
@@ -116,6 +117,7 @@ Send interactive messages with buttons, copy actions, and native flow features:
 ```javascript
 await sock.sendMessage(jid, {    
     interactiveMessage: {      
+        header: "Hello World",
         title: "Hello World",      
         footer: "telegram: @yumevtc",      
         image: { url: "https://example.com/image.jpg" },      
@@ -194,6 +196,7 @@ Send interactive messages with thumbnail image and copy button:
 ```javascript
 await sock.sendMessage(jid, {
     interactiveMessage: {
+        header: "Hello World",
         title: "Hello World",
         footer: "telegram: @yumevtc",
         image: { url: "https://example.com/image.jpg" },
@@ -246,6 +249,7 @@ Send interactive messages with document from buffer (file system) - **Note: Docu
 ```javascript
 await sock.sendMessage(jid, {
     interactiveMessage: {
+        header: "Hello World",
         title: "Hello World",
         footer: "telegram: @yumevtc",
         document: fs.readFileSync("./package.json"),
@@ -287,6 +291,7 @@ Send interactive messages with document from buffer (file system) without contex
 ```javascript
 await sock.sendMessage(jid, {
     interactiveMessage: {
+        header: "Hello World",
         title: "Hello World",
         footer: "telegram: @yumevtc",
         document: fs.readFileSync("./package.json"),
